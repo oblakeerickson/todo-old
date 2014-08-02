@@ -1,4 +1,5 @@
 class Api::UsersController < ApplicationController
+  skip_before_action :verify_authenticity_token
   def index
     render json: User.all
   end
@@ -20,6 +21,6 @@ class Api::UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:todo).permit(:title, :is_completed)
+    params.require(:user).permit(:name)
   end
 end
