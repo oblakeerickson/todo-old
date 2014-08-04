@@ -1,5 +1,3 @@
 {{#each}}
-  {{~#link-to 'users.show' this}}
-    {{name}} ({{todos.length}})
-  {{~/link-to}}
+    <li>{{~#link-to 'user' this}} {{name}} ({{todos.length}}) {{~/link-to}}</li>
 {{/each}}
