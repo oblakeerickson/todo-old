@@ -27,3 +27,5 @@ A sample application to learn:
 ## Current Issues
 
 Trying to [figure out how to create todo's that belongTo a user](http://stackoverflow.com/questions/25061155/emberjs-how-to-create-a-new-belongsto-item).
+
+I have the right controller called now, but the [user_id is not being passed along with the todo title when it makes the post request](http://stackoverflow.com/questions/25120549/ember-js-request-payload-user-id-is-null).
